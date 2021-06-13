@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'get /api/v1/forecast', type: :request do
   let(:valid_headers) { Hash["Content-Type", "application/json", "Accept", "application/json"] }
+
   describe 'happy path' do
     it "returns a json forecast object when provided proper params and headers" do
       get '/api/v1/forecast?location=denver,co', headers: valid_headers, as: :json
