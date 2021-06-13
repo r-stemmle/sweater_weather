@@ -33,7 +33,7 @@ RSpec.describe 'get /api/v1/forecast', type: :request do
       expect(body[:data][:attributes][:current_weather][:temperature]).to be_a Float
       expect(body[:data][:attributes][:current_weather][:feels_like]).to be_a Float
       expect(body[:data][:attributes][:current_weather][:humidity]).to be_a Integer
-      expect(body[:data][:attributes][:current_weather][:uvi]).to be_a Float
+      expect(body[:data][:attributes][:current_weather][:uvi]).to be_a_kind_of(Numeric)
       expect(body[:data][:attributes][:current_weather][:visibility]).to be_a Integer
       expect(body[:data][:attributes][:current_weather][:conditions]).to be_a String
       expect(body[:data][:attributes][:current_weather][:icon]).to be_a String

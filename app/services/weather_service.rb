@@ -1,4 +1,6 @@
 class WeatherService
+  include Json
+
   attr_reader :connection, :endpoint, :lat_n_lng
 
   def initialize(location, endpoint, url= 'https://api.openweathermap.org')
@@ -14,9 +16,5 @@ class WeatherService
       req.params['appid'] = ENV['wx_api_key']
     end
     parse(response.body)
-  end
-
-  def parse(data)
-    JSON.parse(data, symbolize_names: true)
   end
 end
