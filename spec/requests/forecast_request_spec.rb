@@ -65,5 +65,29 @@ RSpec.describe 'get /api/v1/forecast', type: :request do
       expect(body[:data][:attributes][:hourly_weather].first[:conditions]).to be_a String
       expect(body[:data][:attributes][:hourly_weather].first[:icon]).to be_a String
     end
+
+    it "can accept a valid zip code" do
+      get '/api/v1/forecast?location=12344'
+      expect(response.status).to eq(200)
+    end
+  end
+
+  describe 'sad path' do
+    it "cannot return forecast without a location" do
+      get '/api/v1/forecast'
+      expect(response.status).to eq(400)
+      body = JSON.parse(response.body, symbolize_names: true)
+      expect(body[:errors]).to be_a Array
+      expect(body[:errors].first).to eq("bad request")
+    end
+
+    it "does not return forecast with too many numbers in request" do
+      # get '/api/v1/forecast?location=2484753284039023'
+      # # expect(response.status).to eq(400)
+      # body = JSON.parse(response.body, symbolize_names: true)
+      # require "pry"; binding.pry
+      # expect(body[:errors]).to be_a Array
+      # expect(body[:errors].first).to eq("bad request")
+    end
   end
 end
