@@ -1,22 +1,17 @@
 class BooksService
   include Json
 
-  attr_reader :connection, :endpoint, :quantity, :location
+  attr_reader :connection, :endpoint, :quantity, :subject
 
   def initialize(location, quantity, conn= Faraday.new('https://openlibrary.org'))
-    @location = location
+    @subject = location[/^([^,])+/]
     @quantity = quantity
-    @endpoint = endpoint
+    @endpoint = "/subjects/#{subject}.json?limit=#{quantity}"
     @connection = conn
   end
 
   def get_books
-    response = connection.get(endpoint) do |req|
-      req.params['lat'] = lat_n_lng[:lat]
-      req.params['lon'] = lat_n_lng[:lng]
-      req.params['appid'] = ENV['wx_api_key']
-    end
-    x = parse(response.body)
-    require "pry"; binding.pry
+    response = connection.get(endpoint)
+    parse(response.body)
   end
 end
