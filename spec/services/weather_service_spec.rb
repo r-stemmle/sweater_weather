@@ -9,7 +9,7 @@ RSpec.describe WeatherService do
       forecast = wx.get_forecast
       expect(forecast).to be_a Hash
       expect(forecast.keys).to eq(
-        [:lat, :lon, :timezone, :timezone_offset, :current, :minutely, :hourly, :daily, :alerts]
+        [:lat, :lon, :timezone, :timezone_offset, :current, :minutely, :hourly, :daily]
       )
     end
   end
