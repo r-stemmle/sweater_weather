@@ -1,17 +1,18 @@
 class Books
+  attr_reader :id
+
   def initialize(books, forecast)
+    @id = 'null'
     @data = books
     @weather = forecast
   end
 
   def books
     @data[:works].map do |work|
-      [
-        {
-          title: work[:title],
-          authors: work[:authors]
-        }
-      ]
+      {
+        title: work[:title],
+        authors: work[:authors]
+      }
     end
   end
 
@@ -26,7 +27,7 @@ class Books
   def forecast
     {
       summary: @weather[:current][:weather].first[:description],
-      temperature: kelvin_to_fh(@weather[:current][:temp])
+      temperature: "#{kelvin_to_fh(@weather[:current][:temp])} F"
     }
   end
 
