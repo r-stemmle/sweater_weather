@@ -10,5 +10,14 @@ RSpec.describe MapquestService do
       expect(lat_n_lng[:lat]).to be_a Float
       expect(lat_n_lng[:lng]).to be_a Float
     end
+
+    it '#get_route' do
+      origin = "Denver,CO"
+      destination = "Pueblo,CO"
+      endpoint = '/directions/v2/route'
+      mapquest = MapquestService.new(endpoint)
+      route = mapquest.get_route(origin, destination)
+      require "pry"; binding.pry
+    end
   end
 end

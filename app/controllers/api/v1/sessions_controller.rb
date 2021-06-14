@@ -6,7 +6,7 @@ class Api::V1::SessionsController < ApplicationController
     if @user.try(:authenticate, user_params[:password])
       render json: UsersSerializer.new(@user), status: 200
     else
-      render json: {errors: ["incorrect password"]}, status: 404
+      render json: {errors: ["incorrect username or password"]}, status: 404
     end
   end
 
