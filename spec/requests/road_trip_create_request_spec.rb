@@ -20,7 +20,6 @@ RSpec.describe 'post /api/v1/road_trip', type: :request do
       post '/api/v1/road_trip', headers: valid_headers, params: valid_body, as: :json
       expect(response.status).to eq(200)
       body = JSON.parse(response.body, symbolize_names: true)
-      require "pry"; binding.pry
     end
   end
 end
