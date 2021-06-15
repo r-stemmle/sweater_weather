@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe MapquestService do
   describe "instance methods" do
-    it "#get_lat_lng" do
+    it "#get_lat_lng", :vcr do
       endpoint = '/geocoding/v1/address'
       mapquest = MapquestService.new(endpoint)
       lat_n_lng = mapquest.get_lat_lng('denver,co')
@@ -11,7 +11,7 @@ RSpec.describe MapquestService do
       expect(lat_n_lng[:lng]).to be_a Float
     end
 
-    it '#get_route' do
+    it '#get_route', :vcr do
       origin = "Denver,CO"
       destination = "Pueblo,CO"
       endpoint = '/directions/v2/route'

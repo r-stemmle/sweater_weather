@@ -61,6 +61,23 @@ RSpec.describe Forecast do
         }
       ]
     }
-    expect(Forecast.new(data)).to be_a Forecast
+    forecast = Forecast.new(data)
+    expect(forecast).to be_a Forecast
+    expect(forecast.id).to eq('null')
+    expect(forecast.current_weather).to be_a Hash
+    expect(forecast.current_weather.keys).to include(
+      :datetime, :sunrise, :sunset, :temperature, :feels_like, :humidity, :uvi,
+      :visibility, :conditions, :icon
+    )
+    expect(forecast.hourly_weather).to be_a Array
+    expect(forecast.hourly_weather.first).to be_a Hash
+    expect(forecast.hourly_weather.first.keys).to include(
+      :time, :temperature, :conditions, :icon
+    )
+    expect(forecast.daily_weather).to be_a Array
+    expect(forecast.daily_weather.first).to be_a Hash
+    expect(forecast.daily_weather.first.keys).to include(
+      :date, :sunrise, :sunset, :max_temp, :min_temp, :conditions, :icon
+    )
   end
 end

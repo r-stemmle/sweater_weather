@@ -15,7 +15,7 @@ RSpec.describe 'post /api/v1/users', type: :request do
   }
 
   describe 'happy path' do
-    it "creates a user and returns an api key" do
+    it "creates a user and returns an api key", :vcr do
       post '/api/v1/users', headers: valid_headers, params: valid_body, as: :json
       expect(response.status).to eq(201)
       body = JSON.parse(response.body, symbolize_names: true)

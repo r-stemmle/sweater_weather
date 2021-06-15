@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe BooksService do
   describe "instance methods" do
-    it "exists and has attributes" do
+    it "exists and has attributes", :vcr do
       location = 'denver,co'
       quantity = 5
       books_service = BooksService.new(location, quantity)

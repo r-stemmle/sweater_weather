@@ -4,7 +4,7 @@ RSpec.describe 'get /api/v1/forecast', type: :request do
   let(:valid_headers) { Hash["Content-Type", "application/json", "Accept", "application/json"] }
 
   describe 'happy path' do
-    it "returns a json forecast object when provided proper params and headers" do
+    it "returns a json forecast object when provided proper params and headers", :vcr do
       get '/api/v1/forecast?location=denver,co', headers: valid_headers, as: :json
       expect(response.status).to eq(200)
       body = JSON.parse(response.body, symbolize_names: true)
@@ -67,13 +67,13 @@ RSpec.describe 'get /api/v1/forecast', type: :request do
       expect(body[:data][:attributes][:hourly_weather].first[:icon]).to be_a String
     end
 
-    it "can accept a valid zip code" do
+    it "can accept a valid zip code", :vcr do
       get '/api/v1/forecast?location=12344'
       expect(response.status).to eq(200)
     end
   end
 
-  describe 'sad path' do
+  describe 'sad path', :vcr do
     it "cannot return forecast without a location" do
       get '/api/v1/forecast'
       expect(response.status).to eq(400)

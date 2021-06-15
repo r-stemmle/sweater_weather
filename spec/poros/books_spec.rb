@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Books do
   describe "it exists and has attributes" do
-    it "can be created with proper data" do
+    it "can be created with proper data", :vcr do
       data = {
         :key=>"/subjects/denver",
         :name=>"denver",

@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe PexelService do
   describe "instance methods" do
-    it "exists and has attributes" do
+    it "exists and has attributes", :vcr do
       endpoint = '/v1/search'
       location = 'denver,co'
       pexel = PexelService.new(location, endpoint)
@@ -11,7 +11,7 @@ RSpec.describe PexelService do
       expect(pexel.endpoint).to eq(endpoint)
     end
 
-    it "#get_image" do
+    it "#get_image", :vcr do
       endpoint = '/v1/search'
       location = 'denver,co'
       pexel = PexelService.new(location, endpoint)

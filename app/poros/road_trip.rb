@@ -1,4 +1,6 @@
 class RoadTrip
+  include Kelvin
+
   attr_reader :start_city, :end_city, :travel_time, :id
 
   def initialize(data)
@@ -14,10 +16,5 @@ class RoadTrip
       temperature: kelvin_to_fh(@weather_at_eta[:temp]),
       conditions: @weather_at_eta[:weather].first[:description]
     }
-  end
-
-  def kelvin_to_fh(kelvin)
-    f = (kelvin - 273.15) * (9/5) + 32
-    f.round(2)
   end
 end
