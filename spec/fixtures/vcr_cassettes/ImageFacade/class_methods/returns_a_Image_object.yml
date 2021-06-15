@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?per_page=3&query=cityscape%20denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      Authorization:
+      - "<pix_api_key>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 15 Jun 2021 13:59:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '750'
+      Connection:
+      - keep-alive
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443";
+        ma=86400
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 0ab19102410000f31dc4847000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Set-Cookie:
+      - __cf_bm=0e59897ef355c2860c162f86a39cf1c82647c585-1623765543-1800-ARsaqZoAfDGqa5dg146CwfvS848mX/Qvua8WBDMB5bqyWZTrmW96FuvlqKgK96tI6nwZT+QUQGi7gbUXWzcj4Uk=;
+        path=/; expires=Tue, 15-Jun-21 14:29:03 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      - __cf_bm=42d9fcb0b91fb7e97d949650de8cabd03a5029cd-1623700164-1800-AYFTTrxH5iGuJqtATdMsYrAu60OsDV5Pc+Vhpzwpp9+zx0TZZPewrI91bq4wpL4foYqyqJkS3tboVio+LLPbE2k=;
+        path=/; expires=Mon, 14-Jun-21 20:19:24 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - ALLOWALL
+      X-Ratelimit-Limit:
+      - '20000'
+      X-Ratelimit-Remaining:
+      - '19924'
+      X-Ratelimit-Reset:
+      - '1626126883'
+      X-Request-Id:
+      - f40c69b2-58e5-4aa4-8b5f-7818b786633a
+      X-Runtime:
+      - '0.099282'
+      X-Server:
+      - master
+      X-Tyk-Cached-Response:
+      - '1'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 65fc5116cbb0f31d-ATL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"per_page":3,"photos":[{"id":325185,"width":5472,"height":3648,"url":"https://www.pexels.com/photo/view-of-cityscape-325185/","photographer":"Aleksandar
+        Pasaric","photographer_url":"https://www.pexels.com/@apasaric","photographer_id":105079,"avg_color":"#CBD0D6","src":{"original":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg","large2x":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false},{"id":4108480,"width":3910,"height":5865,"url":"https://www.pexels.com/photo/building-with-the-word-hope-4108480/","photographer":"vi
+        Media","photographer_url":"https://www.pexels.com/@vi-media-2493671","photographer_id":2493671,"avg_color":"#505358","src":{"original":"https://images.pexels.com/photos/4108480/pexels-photo-4108480.jpeg","large2x":"https://images.pexels.com/photos/4108480/pexels-photo-4108480.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/4108480/pexels-photo-4108480.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/4108480/pexels-photo-4108480.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/4108480/pexels-photo-4108480.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/4108480/pexels-photo-4108480.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/4108480/pexels-photo-4108480.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/4108480/pexels-photo-4108480.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false},{"id":3835461,"width":5000,"height":4000,"url":"https://www.pexels.com/photo/luminous-ferris-wheel-in-modern-city-district-on-river-bank-at-night-3835461/","photographer":"Alex
+        Chistol","photographer_url":"https://www.pexels.com/@alex-chistol-1715967","photographer_id":1715967,"avg_color":"#1E2832","src":{"original":"https://images.pexels.com/photos/3835461/pexels-photo-3835461.jpeg","large2x":"https://images.pexels.com/photos/3835461/pexels-photo-3835461.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3835461/pexels-photo-3835461.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3835461/pexels-photo-3835461.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3835461/pexels-photo-3835461.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3835461/pexels-photo-3835461.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3835461/pexels-photo-3835461.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3835461/pexels-photo-3835461.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false}],"total_results":8000,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=3\u0026query=cityscape+denver%2Cco"}'
+  recorded_at: Tue, 15 Jun 2021 13:59:03 GMT
+recorded_with: VCR 6.0.0

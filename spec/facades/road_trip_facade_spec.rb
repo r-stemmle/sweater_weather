@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe RoadTripFacade do
-  describe 'class methods' do
+  describe 'class methods', :vcr do
     it "returns a road_trip object with proper origin and destination" do
       origin = "Denver,CO"
       destination = "Pueblo,CO"
