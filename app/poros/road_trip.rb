@@ -1,7 +1,8 @@
 class RoadTrip
-  attr_reader :start_city, :end_city, :travel_time
+  attr_reader :start_city, :end_city, :travel_time, :id
 
   def initialize(data)
+    @id = "null"
     @start_city = data[:start_city]
     @end_city = data[:end_city]
     @travel_time = data[:travel_time]

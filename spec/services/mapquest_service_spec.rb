@@ -17,7 +17,6 @@ RSpec.describe MapquestService do
       endpoint = '/directions/v2/route'
       mapquest = MapquestService.new(endpoint)
       route = mapquest.get_route(origin, destination)
-      require "pry"; binding.pry
     end
   end
 end
