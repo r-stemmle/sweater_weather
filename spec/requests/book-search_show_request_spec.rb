@@ -6,7 +6,7 @@ RSpec.describe 'get /api/v1/book-search', type: :request do
   }
 
   describe 'happy path' do
-    it "returns dest city, forecast, total books #, books" do
+    it "returns dest city, forecast, total books #, books", :vcr do
       get '/api/v1/book-search?location=denver,co&quantity=5', headers: valid_headers, as: :json
       expect(response.status).to eq(200)
       body = JSON.parse(response.body, symbolize_names: true)
@@ -34,7 +34,7 @@ RSpec.describe 'get /api/v1/book-search', type: :request do
       expect(body[:data][:attributes][:books].first[:authors].first[:name]).to be_a String
     end
 
-    it "still works if no quantity is included" do
+    it "still works if no quantity is included", :vcr do
       get '/api/v1/book-search?location=denver,co', headers: valid_headers, as: :json
       expect(response.status).to eq(200)
       body = JSON.parse(response.body, symbolize_names: true)
@@ -43,7 +43,7 @@ RSpec.describe 'get /api/v1/book-search', type: :request do
   end
 
   describe 'sad path' do
-    it "returns 404 with no params" do
+    it "returns 404 with no params", :vcr do
       get '/api/v1/book-search', headers: valid_headers, as: :json
       expect(response.status).to eq(404)
     end

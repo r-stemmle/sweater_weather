@@ -14,7 +14,7 @@ RSpec.describe 'post /api/v1/sessions', type: :request do
   }
 
   describe 'happy path' do
-    it "creates a user session and returns their api key" do
+    it "creates a user session and returns their api key", :vcr do
       user = User.create!(email: "testman@themail.com", password: 'runner1234', api_key: 'p+K71asjfKVCw15UuzaKNpx2E80++Z4H')
       post '/api/v1/sessions', headers: valid_headers, params: valid_body, as: :json
       expect(response.status).to eq(200)
