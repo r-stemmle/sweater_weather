@@ -28,5 +28,12 @@ RSpec.describe Image do
     expect(image).to be_an_instance_of Image
     expect(image.id).to eq('null')
     expect(image.image).to be_a Hash
+    expect(image.image.keys).to include(
+      :url, :source, :link, :credit
+    )
+    expect(image.image[:credit]).to be_a Hash
+    expect(image.image[:credit].keys).to include(
+      :photographer, :photographer_url
+    )
   end
 end

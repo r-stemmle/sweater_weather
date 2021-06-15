@@ -25,7 +25,14 @@ RSpec.describe RoadTrip do
          }
       road_trip = RoadTrip.new(data)
       expect(road_trip).to be_an_instance_of RoadTrip
-      expect(road_trip.weather_at_eta).to be_a Hash  
+      expect(road_trip.weather_at_eta).to be_a Hash
+      expect(road_trip.weather_at_eta.keys).to include(
+        :temperature, :conditions
+      )
+      expect(road_trip.id).to eq('null')
+      expect(road_trip.start_city).to be_a String
+      expect(road_trip.end_city).to be_a String
+      expect(road_trip.travel_time).to be_a String
     end
   end
 end
