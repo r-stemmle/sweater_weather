@@ -84,7 +84,7 @@ body:
 
 #### Design Ideas  
 Sweater Weather is a RESTful API designed with RESTful routes and actions in mind..  
-Meaning the POST request goes to a create action and the get goes to a show or index action.
+Meaning the POST request goes to a create action and the GET request goes to a show or index action.
 
 #### Database  
  * [PostgreSQL](https://www.postgresql.org/)  
@@ -93,7 +93,7 @@ Meaning the POST request goes to a create action and the get goes to a show or i
 
 #### Testing
  * [rspec-rails](https://github.com/rspec/rspec-rails)  
- * `bundle exec rspec`
+ * RUN `bundle exec rspec`
 
 #### API consumption
  * [openlibrary api](https://openlibrary.org/dev/docs/api/books)  
@@ -106,4 +106,5 @@ Meaning the POST request goes to a create action and the get goes to a show or i
  * `bundle install`
  * `rails db:create`
  * `rails db:migrate`
+ * `bundle exec rspec`
  * `rails server`

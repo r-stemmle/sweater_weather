@@ -1,16 +1,15 @@
 class Api::V1::BackgroundsController < ApplicationController
-  rescue_from ActionController::ParameterMissing, with: :no_location
 
   def index
-    background = ImageFacade.get_image(params[:location])
-    render json: BackgroundSerializer.new(background)
+    unless params[:location].nil?
+      background = ImageFacade.get_image(params[:location])
+      render json: BackgroundSerializer.new(background)
+    else
+      no_location
+    end
   end
 
   private
-
-  def location
-    params.require(:location)
-  end
 
   def no_location
     render json: {errors: ["bad request"]}, status: 400
