@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?per_page=3&query=cityscape%20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      Authorization:
+      - "<pix_api_key>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 15 Jun 2021 20:49:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '713'
+      Connection:
+      - keep-alive
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443";
+        ma=86400
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Set-Cookie:
+      - __cf_bm=37174c402d626e3409c06e7e0eb253e7ff473cd1-1623790152-1800-AS7n1UgNhn5r3U2YM/4/tKHAR175prWch80BbjjXPfWTBKaulvuGN3XkptHBdSsLCBU+xvs+Sbd2Xn7q0rt5HVU=;
+        path=/; expires=Tue, 15-Jun-21 21:19:12 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      - __cf_bm=e7b00d463a82c9c6cd25475e09c6564961e21c05-1623789856-1800-AeAStK4Yjdmi7jnHq8wUTkdEOjCXlJYiHmHgoEJO16bo62iiCuOjZRPccfWz52A24996JisvEydT5+T4Kae6ONs=;
+        path=/; expires=Tue, 15-Jun-21 21:14:16 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - ALLOWALL
+      X-Ratelimit-Limit:
+      - '20000'
+      X-Ratelimit-Remaining:
+      - '19914'
+      X-Ratelimit-Reset:
+      - '1626126883'
+      X-Request-Id:
+      - 3fe62ec5-7ef8-4fc4-984a-ecda2611d9d9
+      X-Runtime:
+      - '0.083061'
+      X-Server:
+      - master
+      X-Tyk-Cached-Response:
+      - '1'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 65fea9e409c0184f-ATL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"per_page":3,"photos":[{"id":1034662,"width":3489,"height":4361,"url":"https://www.pexels.com/photo/photography-of-roadway-during-dusk-1034662/","photographer":"Jiarong
+        Deng","photographer_url":"https://www.pexels.com/@visionmonkeyandy","photographer_id":388754,"avg_color":"#2E3436","src":{"original":"https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg","large2x":"https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false},{"id":325185,"width":5472,"height":3648,"url":"https://www.pexels.com/photo/view-of-cityscape-325185/","photographer":"Aleksandar
+        Pasaric","photographer_url":"https://www.pexels.com/@apasaric","photographer_id":105079,"avg_color":"#CBD0D6","src":{"original":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg","large2x":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false},{"id":466685,"width":5833,"height":3620,"url":"https://www.pexels.com/photo/empire-state-building-new-york-466685/","photographer":"Lukas
+        Kloeppel","photographer_url":"https://www.pexels.com/@lkloeppel","photographer_id":155996,"avg_color":"#818E9E","src":{"original":"https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg","large2x":"https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false}],"total_results":8000,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=3\u0026query=cityscape+"}'
+  recorded_at: Tue, 15 Jun 2021 20:49:12 GMT
+recorded_with: VCR 6.0.0

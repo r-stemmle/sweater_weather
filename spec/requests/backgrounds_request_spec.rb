@@ -32,8 +32,8 @@ RSpec.describe 'get /api/v1/backgrounds', type: :request do
   end
 
   describe 'sad path' do
-    it "cannot return background image without a keyword", :vcr do
-      get '/api/v1/forecast'
+    it "cannot return background image without location param", :vcr do
+      get '/api/v1/backgrounds'
       expect(response.status).to eq(400)
       body = JSON.parse(response.body, symbolize_names: true)
       expect(body[:errors]).to be_a Array
