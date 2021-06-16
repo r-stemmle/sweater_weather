@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.pexels.com/v1/search?per_page=3&query=cityscape%20denver,co
+    uri: https://api.pexels.com/v1/search?per_page=3&query=denver,co
     body:
       encoding: US-ASCII
       string: ''
@@ -21,11 +21,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 15 Jun 2021 17:16:23 GMT
+      - Wed, 16 Jun 2021 14:35:20 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '750'
+      - '738'
       Connection:
       - keep-alive
       Alt-Svc:
@@ -36,15 +36,15 @@ http_interactions:
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - 0ab245acaf0000107ce590a000000001
+      - 0ab6d897e2000017f39781c000000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Set-Cookie:
-      - __cf_bm=06efaa29ade2a72b080b3498406017eb603150d7-1623777383-1800-AXQg0DDVc+I/yUAp+YjQOmaqn+ARkbHkMMfgS8PrQunpvtcBPxj16m3oHMezfTnRNDnZHUKkQaxD1wfncjFupFk=;
-        path=/; expires=Tue, 15-Jun-21 17:46:23 GMT; domain=.pexels.com; HttpOnly;
+      - __cf_bm=1e84e74cb5ee6c99eedf96f9bfc52bdc3800f31b-1623852022-1800-AeBeWRqxsyBzTsbcrXaI42Qc8V3qt2w27E1D86dq91yE3lA0nMsB0i07KViwSL4BKKeoSubOqHp4+5tQl+xb3cE=;
+        path=/; expires=Wed, 16-Jun-21 14:30:22 GMT; domain=.pexels.com; HttpOnly;
         Secure; SameSite=None
-      - __cf_bm=42d9fcb0b91fb7e97d949650de8cabd03a5029cd-1623700164-1800-AYFTTrxH5iGuJqtATdMsYrAu60OsDV5Pc+Vhpzwpp9+zx0TZZPewrI91bq4wpL4foYqyqJkS3tboVio+LLPbE2k=;
-        path=/; expires=Mon, 14-Jun-21 20:19:24 GMT; domain=.pexels.com; HttpOnly;
+      - __cf_bm=4b9801bd9c12b91366d025e1e55391040d7fc80f-1623854120-1800-ARGaObIVy3vXY9NGW0YLNY0ZEk6ZhAFzmsFh+M8aPVcwO+NhBt8PRYdx0JaRNKZWKQSM9ND4JR3cVJMl4GPg4PM=;
+        path=/; expires=Wed, 16-Jun-21 15:05:20 GMT; domain=.pexels.com; HttpOnly;
         Secure; SameSite=None
       Vary:
       - Origin
@@ -53,13 +53,13 @@ http_interactions:
       X-Ratelimit-Limit:
       - '20000'
       X-Ratelimit-Remaining:
-      - '19922'
+      - '19904'
       X-Ratelimit-Reset:
       - '1626126883'
       X-Request-Id:
-      - f40c69b2-58e5-4aa4-8b5f-7818b786633a
+      - 8a37936a-d623-46b8-bd50-cca176cb5878
       X-Runtime:
-      - '0.099282'
+      - '0.120432'
       X-Server:
       - master
       X-Tyk-Cached-Response:
@@ -67,12 +67,11 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 65fd72277b80107c-ATL
+      - 6604c39fcc3a17f3-ATL
     body:
       encoding: ASCII-8BIT
-      string: '{"page":1,"per_page":3,"photos":[{"id":325185,"width":5472,"height":3648,"url":"https://www.pexels.com/photo/view-of-cityscape-325185/","photographer":"Aleksandar
-        Pasaric","photographer_url":"https://www.pexels.com/@apasaric","photographer_id":105079,"avg_color":"#CBD0D6","src":{"original":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg","large2x":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false},{"id":4108480,"width":3910,"height":5865,"url":"https://www.pexels.com/photo/building-with-the-word-hope-4108480/","photographer":"vi
-        Media","photographer_url":"https://www.pexels.com/@vi-media-2493671","photographer_id":2493671,"avg_color":"#505358","src":{"original":"https://images.pexels.com/photos/4108480/pexels-photo-4108480.jpeg","large2x":"https://images.pexels.com/photos/4108480/pexels-photo-4108480.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/4108480/pexels-photo-4108480.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/4108480/pexels-photo-4108480.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/4108480/pexels-photo-4108480.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/4108480/pexels-photo-4108480.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/4108480/pexels-photo-4108480.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/4108480/pexels-photo-4108480.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false},{"id":3835461,"width":5000,"height":4000,"url":"https://www.pexels.com/photo/luminous-ferris-wheel-in-modern-city-district-on-river-bank-at-night-3835461/","photographer":"Alex
-        Chistol","photographer_url":"https://www.pexels.com/@alex-chistol-1715967","photographer_id":1715967,"avg_color":"#1E2832","src":{"original":"https://images.pexels.com/photos/3835461/pexels-photo-3835461.jpeg","large2x":"https://images.pexels.com/photos/3835461/pexels-photo-3835461.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3835461/pexels-photo-3835461.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3835461/pexels-photo-3835461.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3835461/pexels-photo-3835461.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3835461/pexels-photo-3835461.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3835461/pexels-photo-3835461.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3835461/pexels-photo-3835461.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false}],"total_results":8000,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=3\u0026query=cityscape+denver%2Cco"}'
-  recorded_at: Tue, 15 Jun 2021 17:16:23 GMT
+      string: '{"page":1,"per_page":3,"photos":[{"id":4167544,"width":3372,"height":5058,"url":"https://www.pexels.com/photo/hands-with-latex-gloves-holding-a-globe-with-a-face-mask-4167544/","photographer":"Anna
+        Shvets","photographer_url":"https://www.pexels.com/@shvetsa","photographer_id":1984515,"avg_color":"#B5B7BD","src":{"original":"https://images.pexels.com/photos/4167544/pexels-photo-4167544.jpeg","large2x":"https://images.pexels.com/photos/4167544/pexels-photo-4167544.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/4167544/pexels-photo-4167544.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/4167544/pexels-photo-4167544.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/4167544/pexels-photo-4167544.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/4167544/pexels-photo-4167544.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/4167544/pexels-photo-4167544.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/4167544/pexels-photo-4167544.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false},{"id":3184423,"width":4004,"height":6000,"url":"https://www.pexels.com/photo/photo-of-people-holding-each-other-s-hands-3184423/","photographer":"fauxels","photographer_url":"https://www.pexels.com/@fauxels","photographer_id":1281351,"avg_color":"#8B7D77","src":{"original":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg","large2x":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false},{"id":3153198,"width":3781,"height":2521,"url":"https://www.pexels.com/photo/woman-sharing-her-presentation-with-her-colleagues-3153198/","photographer":"Canva
+        Studio","photographer_url":"https://www.pexels.com/@canvastudio","photographer_id":1614591,"avg_color":"#A9A39B","src":{"original":"https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg","large2x":"https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false}],"total_results":2504,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=3\u0026query=denver%2Cco"}'
+  recorded_at: Wed, 16 Jun 2021 14:35:20 GMT
 recorded_with: VCR 6.0.0
