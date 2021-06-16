@@ -15,56 +15,163 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 503
-      message: Service Temporarily Unavailable
+      code: 200
+      message: OK
     headers:
       Server:
-      - nginx/1.10.3 (Ubuntu)
+      - nginx/1.18.0 (Ubuntu)
       Date:
-      - Tue, 15 Jun 2021 20:42:29 GMT
+      - Wed, 16 Jun 2021 11:39:19 GMT
       Content-Type:
-      - text/html
-      Content-Length:
-      - '2337'
+      - application/json
+      Transfer-Encoding:
+      - chunked
       Connection:
-      - close
-      Etag:
-      - '"60c908b3-921"'
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Method:
+      - GET, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ol-Stats:
+      - '"IB 2 0.014 MC 3 0.001 SR 1 0.000 TT 0 0.050"'
+      Referrer-Policy:
+      - no-referrer-when-downgrade
     body:
       encoding: UTF-8
-      string: |
-        <!DOCTYPE html>
-        <html>
-            <head>
-                <title>Open Library Maintainance</title>
-                <style type="text/css">
-                body{text-align:center; background: #E2DCC5;}
-                #logo{margin:45px auto 75px;}
-                p{font-size:1em;line-height:1.5em;font-family:Georgia,serif;}
-                .twitter-tweet{margin: 0 auto;}
-                </style>
-                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-                <meta http-equiv="refresh" content="15;url=https://archive.org/details/inlibrary?query=openlibrary_subject%3Astaff_picks&sin=&sort=-week" />
-            </head>
-            <body>
-            <div id="logo"><img src="/logo_OL-err.png" alt="The Open Library is closed!" width="219" height="131"/></div>
-            <h1>Open Library is offline for <a href="https://twitter.com/internetarchive/status/1404800873377583104">scheduled maintenance</a></h1>
-            <h2>During this time, you can still <a href="https://archive.org/account/?tab=loans">access your loans</a> or <a href="https://archive.org/details/inlibrary?query=openlibrary_subject%3Astaff_picks&sin=&sort=-week">browse, borrow, &amp; read books</a> on Archive.org</h2>
-            <p>In 15 seconds, you will be redirected to Archive.org's <a href="https://archive.org/details/inlibrary?query=openlibrary_subject%3Astaff_picks&sin=&sort=-week">Open Library Books</a>.</p>
-            <hr/>
-            <p>Please <a href="https://twitter.com/openlibrary">visit our twitter</a> for updates about site status. Thank you for your patience!</p>
-
-        <!--
-            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Tomorrow 2021-02-11 @ 11am PT <a href="https://t.co/Cak4Pu3v6n">https://t.co/Cak4Pu3v6n</a>
-                 will be offline for up to 5 hours as we perform major server upgrades.<br><br>During this period, you may still
-                 borrow &amp; read books from <a href="https://twitter.com/internetarchive?ref_src=twsrc%5Etfw">@internetarchive</a> here:
-                <br><br>  Loans: <a href="https://t.co/8hmsjldzqZ">https://t.co/8hmsjldzqZ</a>
-                <br><br>  Browse: <a href="https://t.co/DodnMeIbhx">https://t.co/DodnMeIbhx</a>
-                </p>&mdash; Open Library (@openlibrary)
-                <a href="https://twitter.com/openlibrary/status/1359667888857051139?ref_src=twsrc%5Etfw">February 11, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-        --!>
-            </body>
-        </html>
-  recorded_at: Tue, 15 Jun 2021 20:42:28 GMT
+      string: '{"key": "/subjects/denver", "name": "denver", "subject_type": "subject",
+        "work_count": 20, "works": [{"key": "/works/OL2766605W", "title": "The Regis
+        santos", "edition_count": 3, "cover_id": 1694386, "cover_edition_key": "OL708367M",
+        "subject": ["Catalogs", "Folk art", "Santos (Art)", "Art collections", "Regis
+        University (Denver, Colo.)", "Ethnic studies", "Exhibition catalogues and
+        specific collections", "History Of Art / Art & Design Styles", "Museum, historic
+        sites, gallery & art guides", "Hispanic Art", "Colorado", "Permanent Collection
+        Catalogs", "Art", "Art & Art Instruction", "Collections, Catalogs, Exhibitions
+        - General", "Folk & Outsider Art", "Criticism", "Subjects & Themes - General",
+        "New Mexico", "Denver"], "ia_collection": [], "lendinglibrary": false, "printdisabled":
+        false, "lending_edition": "", "lending_identifier": "", "authors": [{"key":
+        "/authors/OL406949A", "name": "Thomas J. Steele"}, {"key": "/authors/OL407128A",
+        "name": "Barbe Awalt"}, {"key": "/authors/OL1240313A", "name": "Paul Fisher
+        Rhetts"}], "first_publish_year": null, "ia": null, "public_scan": false, "has_fulltext":
+        false, "checked_out": false}, {"key": "/works/OL1439708W", "title": "The revolt
+        of modern youth", "edition_count": 3, "cover_id": null, "subject": ["Juvenile
+        delinquency", "Sexual ethics", "Denver", "Denver. Juvenile Court of the City
+        and County of Denver", "Denver (Colo). Juvenile Court of the City and County
+        of Denver", "Denver (Colo)"], "ia_collection": [], "lendinglibrary": false,
+        "printdisabled": false, "lending_edition": "", "lending_identifier": "", "authors":
+        [{"key": "/authors/OL150590A", "name": "Ben B. Lindsey"}], "first_publish_year":
+        null, "ia": null, "public_scan": false, "has_fulltext": false, "checked_out":
+        false}, {"key": "/works/OL3404420W", "title": "Exotic and irrational", "edition_count":
+        2, "cover_id": 740871, "cover_edition_key": "OL8584347M", "subject": ["Opera",
+        "Social life and customs", "Genres & Styles - Opera", "History & Criticism
+        - General", "Music / History & Criticism", "Music-Genres & Styles - Opera",
+        "Music/Songbooks", "Music", "Colorado", "Denver", "Denver (Colo.)"], "ia_collection":
+        [], "lendinglibrary": false, "printdisabled": false, "lending_edition": "",
+        "lending_identifier": "", "authors": [{"key": "/authors/OL558147A", "name":
+        "Young, Allen"}, {"key": "/authors/OL1175532A", "name": "Allen Young"}], "first_publish_year":
+        null, "ia": null, "public_scan": false, "has_fulltext": false, "checked_out":
+        false}, {"key": "/works/OL1439707W", "title": "The dangerous life", "edition_count":
+        2, "cover_id": null, "subject": ["Child welfare", "Denver", "Denver. Juvenile
+        Court of the City and County of Denver"], "ia_collection": [], "lendinglibrary":
+        false, "printdisabled": false, "lending_edition": "", "lending_identifier":
+        "", "authors": [{"key": "/authors/OL150590A", "name": "Ben B. Lindsey"}],
+        "first_publish_year": null, "ia": null, "public_scan": false, "has_fulltext":
+        false, "checked_out": false}, {"key": "/works/OL7099888W", "title": "Monster
+        Solution", "edition_count": 1, "cover_id": 2699837, "cover_edition_key": "OL11709103M",
+        "subject": ["children''s book", "monsters", "Sara Goodman Zimet", "Shannon
+        Parish", "full color", "illustrated", "Denver", "CO", "Sleep", "Juvenile fiction",
+        "Fiction", "Bedtime", "Monsters"], "ia_collection": [], "lendinglibrary":
+        false, "printdisabled": false, "lending_edition": "", "lending_identifier":
+        "", "authors": [{"key": "/authors/OL2010374A", "name": "Sara Goodman Zimet"}],
+        "first_publish_year": null, "ia": null, "public_scan": false, "has_fulltext":
+        false, "checked_out": false}], "ebook_count": 20}'
+  recorded_at: Wed, 16 Jun 2021 11:39:19 GMT
+- request:
+    method: get
+    uri: https://openlibrary.org/subjects/denver.json?limit=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Wed, 16 Jun 2021 11:39:22 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Method:
+      - GET, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ol-Stats:
+      - '"MC 3 0.002 SR 1 0.000 TT 0 0.014"'
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+    body:
+      encoding: UTF-8
+      string: '{"key": "/subjects/denver", "name": "denver", "subject_type": "subject",
+        "work_count": 20, "works": [{"key": "/works/OL2766605W", "title": "The Regis
+        santos", "edition_count": 3, "cover_id": 1694386, "cover_edition_key": "OL708367M",
+        "subject": ["Catalogs", "Folk art", "Santos (Art)", "Art collections", "Regis
+        University (Denver, Colo.)", "Ethnic studies", "Exhibition catalogues and
+        specific collections", "History Of Art / Art & Design Styles", "Museum, historic
+        sites, gallery & art guides", "Hispanic Art", "Colorado", "Permanent Collection
+        Catalogs", "Art", "Art & Art Instruction", "Collections, Catalogs, Exhibitions
+        - General", "Folk & Outsider Art", "Criticism", "Subjects & Themes - General",
+        "New Mexico", "Denver"], "ia_collection": [], "lendinglibrary": false, "printdisabled":
+        false, "lending_edition": "", "lending_identifier": "", "authors": [{"key":
+        "/authors/OL406949A", "name": "Thomas J. Steele"}, {"key": "/authors/OL407128A",
+        "name": "Barbe Awalt"}, {"key": "/authors/OL1240313A", "name": "Paul Fisher
+        Rhetts"}], "first_publish_year": null, "ia": null, "public_scan": false, "has_fulltext":
+        false, "checked_out": false}, {"key": "/works/OL1439708W", "title": "The revolt
+        of modern youth", "edition_count": 3, "cover_id": null, "subject": ["Juvenile
+        delinquency", "Sexual ethics", "Denver", "Denver. Juvenile Court of the City
+        and County of Denver", "Denver (Colo). Juvenile Court of the City and County
+        of Denver", "Denver (Colo)"], "ia_collection": [], "lendinglibrary": false,
+        "printdisabled": false, "lending_edition": "", "lending_identifier": "", "authors":
+        [{"key": "/authors/OL150590A", "name": "Ben B. Lindsey"}], "first_publish_year":
+        null, "ia": null, "public_scan": false, "has_fulltext": false, "checked_out":
+        false}, {"key": "/works/OL3404420W", "title": "Exotic and irrational", "edition_count":
+        2, "cover_id": 740871, "cover_edition_key": "OL8584347M", "subject": ["Opera",
+        "Social life and customs", "Genres & Styles - Opera", "History & Criticism
+        - General", "Music / History & Criticism", "Music-Genres & Styles - Opera",
+        "Music/Songbooks", "Music", "Colorado", "Denver", "Denver (Colo.)"], "ia_collection":
+        [], "lendinglibrary": false, "printdisabled": false, "lending_edition": "",
+        "lending_identifier": "", "authors": [{"key": "/authors/OL558147A", "name":
+        "Young, Allen"}, {"key": "/authors/OL1175532A", "name": "Allen Young"}], "first_publish_year":
+        null, "ia": null, "public_scan": false, "has_fulltext": false, "checked_out":
+        false}, {"key": "/works/OL1439707W", "title": "The dangerous life", "edition_count":
+        2, "cover_id": null, "subject": ["Child welfare", "Denver", "Denver. Juvenile
+        Court of the City and County of Denver"], "ia_collection": [], "lendinglibrary":
+        false, "printdisabled": false, "lending_edition": "", "lending_identifier":
+        "", "authors": [{"key": "/authors/OL150590A", "name": "Ben B. Lindsey"}],
+        "first_publish_year": null, "ia": null, "public_scan": false, "has_fulltext":
+        false, "checked_out": false}, {"key": "/works/OL7099888W", "title": "Monster
+        Solution", "edition_count": 1, "cover_id": 2699837, "cover_edition_key": "OL11709103M",
+        "subject": ["children''s book", "monsters", "Sara Goodman Zimet", "Shannon
+        Parish", "full color", "illustrated", "Denver", "CO", "Sleep", "Juvenile fiction",
+        "Fiction", "Bedtime", "Monsters"], "ia_collection": [], "lendinglibrary":
+        false, "printdisabled": false, "lending_edition": "", "lending_identifier":
+        "", "authors": [{"key": "/authors/OL2010374A", "name": "Sara Goodman Zimet"}],
+        "first_publish_year": null, "ia": null, "public_scan": false, "has_fulltext":
+        false, "checked_out": false}], "ebook_count": 20}'
+  recorded_at: Wed, 16 Jun 2021 11:39:22 GMT
 recorded_with: VCR 6.0.0
