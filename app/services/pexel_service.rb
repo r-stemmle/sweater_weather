@@ -13,7 +13,7 @@ class PexelService
   def get_image
     set_api_key
     resp = connection.get(endpoint) do |req|
-      req.params['query'] = "cityscape #{location}"
+      req.params['query'] = location
       req.params['per_page'] = 3
     end
     one_of_three = parse(resp.body)[:photos].sample
